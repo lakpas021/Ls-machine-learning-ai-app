@@ -3,20 +3,20 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('🤖 Machine Learning Demo App')
+st.title('🤖 Machine Learning App')
 
-st.info('This is app builds a machine learning model buid and trained by Lakpa Sherpa!')
+st.info('This demo App is builds a machine learning model! trained and build by Lakpa using regression model')
 
 with st.expander('Data'):
-  st.write('**Raw data**')
+  st.write('**Sample Raw data**')
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
   df
 
-  st.write('**X**')
+  st.write('**X data frame**')
   X_raw = df.drop('species', axis=1)
   X_raw
 
-  st.write('**y**')
+  st.write('**y data frame**')
   y_raw = df.species
   y_raw
 
